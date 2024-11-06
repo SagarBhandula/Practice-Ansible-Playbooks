@@ -1,0 +1,6 @@
+---
+- name: This playbook id for Role
+  hosts: all
+  become: true
+  roles:
+    - setup-apache-role

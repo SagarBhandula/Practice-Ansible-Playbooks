@@ -1,0 +1,9 @@
+---
+- name: Creating Packages
+  hosts: all
+  become: true
+  tasks:
+    - name: Installed Packages
+      yum:
+       name: tree
+       state: present  

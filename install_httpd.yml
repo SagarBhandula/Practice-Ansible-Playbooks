@@ -1,0 +1,16 @@
+---
+- name: My test playbook
+  hosts: all
+  become: true
+
+  tasks:
+  - name: Install httpd Package
+    yum:
+      name: httpd
+      state: present
+  
+  - name: start httpd service
+    service:
+      name: httpd
+      state: started    
+
